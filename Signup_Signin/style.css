@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 99.99vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image{
+    width: 66%;
+    height: 100%;
+    background-image: url('https://wallpapercave.com/wp/wp2035997.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: .9;
+}
+.login{
+    width: 34%;
+    height: 100%;
+    background-image: url('https://wallpapercave.com/wpr/wp13292084.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Heading{
+    color: rgba(132, 245, 226, 0.918);
+    text-shadow: .5px .5px yellow;
+    font-size: 3rem;
+    margin-left: 30px;
+    position: relative;
+    top: 5px;
+}
+.form{
+    position: relative;
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px  10px .5px gainsboro;
+    border-radius: 12px;
+    width: 350px;
+    height: 310px;
+ 
+}
+.form input{
+    width: 250px;
+    height: 50px;
+    margin: 5px;
+    font-size: 1.3rem;
+    padding: 5px;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    border-bottom: 2px solid rgba(245, 131, 131, 0.808); 
+}
+.form input::placeholder{
+    color: rgb(218, 242, 247);
+    opacity: 0.8;
+}
+.input{
+    position: absolute;
+    top: 72px;
+    left: 60px;
+}
+.form button{
+    position: absolute;
+    top: 210px;
+    left: 140px;
+    padding: 5px;
+    font-family: serif;
+    font-size: 1.2rem;
+    width: 80px;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    color: rgba(199, 255, 43, 0.788);
+}
+.form button:hover{
+    background-color: rgba(236, 215, 179, 0.507);
+    color: rgba(241, 238, 35, 0.979);
+    outline: none;
+    border: none;
+}
+#box{
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#box a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+} 
+#box #forget{
+    color: rgba(230, 238, 226, 0.753);
+    font-weight: 800;
+    font-family: 'Times New Roman';
+}
+#box #forget:hover{
+    color: rgba(255, 255, 11, 0.808);
+    text-shadow: .2px .2px white;
+    /* text-decoration: underline; */
+}
+#box #forget::first-letter {
+    font-size: 2rem;
+    color: rgba(238, 204, 15, 0.938);
+    text-decoration: underline;
+}
+#box #signup{
+    color: rgba(240, 212, 141, 0.76);
+    font-weight: 200;
+    font-family: 'math';
+}
+
+#box #signup::first-letter{
+    color: rgba(115, 238, 232, 0.712);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+#box #signup:hover{
+    color: rgba(11, 255, 161, 0.808);
+    text-shadow: .2px .2px white;
+}
+
+
+.signup{
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px .2px goldenrod;
+    background-color: rgba(102, 124, 124, 0.493);
+    opacity: .9;
+    display: none;
+}
+.signup #x{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(248, 8, 8);
+    font-weight: 900;
+    font-family: cursive;
+}
+
+.signup input{
+    position: relative;
+    top: -10px;
+    left: 65px;
+    width: 250px;
+    height: 50px;
+    margin: 5px;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+    color: rgb(3, 255, 213);
+    outline: none;
+    border-bottom: 2px solid rgba(245, 131, 131, 0.808); 
+}
+
+.signup input::placeholder{
+    color: rgba(255, 255, 255, 0.678);
+    opacity: 1;
+}
+
+.signup button{
+    position: absolute;
+    top: 400px;
+    left: 60%;
+    padding: 5px;
+    font-family: serif;
+    font-size: 1.2rem;
+    width: 80px;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    color: rgba(199, 255, 43, 0.788);
+}
+.signup button:hover{
+    background-color: rgba(8, 243, 28, 0.658);
+    color: rgba(49, 49, 46, 0.808);
+    border: none;
+}
+
+.remove{
+    display: none;
+}

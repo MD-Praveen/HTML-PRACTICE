@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <script src="https://kit.fontawesome.com/f2aa675988.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="city" placeholder="Enter City" required>
+        <button id="search">Search</button>
+
+       <span class="details" id="remove">
+            <img id="weatherIcon" src="https://cdn.pixabay.com/photo/2012/04/18/13/21/clouds-37009_640.png" alt="WeatherIcon">
+
+            <div id="temp">
+                <span id="tempDeg"></span> 
+            </div>
+
+            <div id="weatherInfo" >
+                <p id="name">
+                    
+                </p>
+            </div>
+
+            <div id="windHumidity">
+                <div id="humidity">
+                    <h2>Humidity</h2>
+                    <span>
+                        <i class="fa fa-thin fa-water"></i>
+                        <span class="hvalue"></span>
+                    </span>
+                </div>
+                <div id="wind">
+                    <h2>Wind Speed</h2>
+
+                    <span>
+                        <i class="fa-solid fa-wind"></i>
+                        <span class="wvalue"></span>
+                    </span>
+                </div>
+            </div>
+       </span>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

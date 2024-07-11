@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1 {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: 40%;
+    min-height: 100%;
+    background-color: #F4EEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.userDetails {
+    width: 80%;
+    max-width: 400px; 
+    height: auto; 
+    /* background-color: blue; */
+    padding: 5px 0;
+}
+
+.userImage {
+    width: 80%;
+    height: auto; /* Adjust height based on content */
+    max-width: 300px; /* Limit width for smaller screens */
+    border-radius: 10px;
+    margin: 5px auto;
+}
+
+.userImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.details {
+    width: 90%;
+    height: auto;
+    padding: 5px 2px;
+    /* background-color: azure; */
+    margin: 5px auto;
+    h1{
+        text-align: center;
+        padding: 8px 2px;
+        margin-bottom: 5px;
+    }
+    p{
+        text-align: justify;
+        padding: 2px 6px;
+        text-indent: 30px;
+    }
+}
+
+.social-menu {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .social-btn {
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    margin: 15px;
+    border-radius: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px -5px rgb(255,255,255,0.1);
+    transition: all 0.3s;
+    z-index: 10;
+  }
+  .social-btn a {
+    text-decoration: none;
+    color: #fff;
+    i{
+        font-size: 1.8rem;
+    }
+  }
+  .social-btn:hover a {
+    color: #fff;
+  }
+  .social-menu .social-btn::before {
+    content: attr(tooltip);
+    position: absolute;
+    top: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: auto;
+    background: #fff;
+    padding: 10px;
+    color: #000;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-out;
+  }
+  .social-menu .social-btn::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 0;
+    opacity: 0;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 20%;
+    z-index: -2;
+    transition: 
+      all 0.3s ease-out;
+  }
+  .social-menu .social-btn:hover::before {
+    top: -45px;
+    opacity: 1;
+  }
+  .social-btn:hover::after {
+    top: -12px;
+    opacity: 1;
+  }
+  .facebook a {
+    color: #3b5999;
+  }
+  .facebook:hover,
+  .facebook:hover .social-btn:before,
+  .facebook:hover .social-btn:after {
+    background: #3b5999;
+  }
+  .instagram a {
+    color: #962fbf;
+  }
+  .instagram:hover,
+  .instagram:hover .social-btn:before,
+  .instagram:hover .social-btn:after {
+    background: #962fbf;
+  }
+  .pinterest a {
+    color: #c8232c;
+  }
+  .pinterest:hover,
+  .pinterest:hover .social-btn:before,
+  .pinterest:hover .social-btn:after {
+    background: #c8232c;
+  }
+  .linkedin a {
+    color: #0072b1;
+  }
+  .linkedin:hover,
+  .linkedin:hover .social-btn:before,
+  .linkedin:hover .social-btn:after {
+    background: #0072b1;
+  }
+  
+
+
+.right{
+    width: 60%;
+    background-color: #DCD6F7;
+}
+
+@media (max-width: 800px) {
+    .left {
+        width: 100%; /* Occupy full width on smaller screens */
+    }
+
+    .right {
+        width: 100%; /* Occupy full width on smaller screens */
+    }
+
+    .userDetails{
+        width: 50%;
+    }
+
+    .userImage {
+        width: 80%;
+    }
+
+    .details {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+@media (max-width: 500px) {
+    .left {
+        width: 100%; /* Occupy full width on smaller screens */
+    }
+
+    .right {
+        width: 100%; /* Occupy full width on smaller screens */
+    }
+
+    .userDetails{
+        width: 75%;
+    }
+
+    .userImage {
+        width: 85%;
+    }
+
+    .details {
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    .social-menu {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 0;
+    } 
+
+    .social-btn{
+        margin: 5px;
+        width: 50px;
+        height: 45px;
+    }
+    .social-btn a i{
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
